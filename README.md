@@ -30,15 +30,6 @@ e_k = p_k - p_g.
 
 During training, Gaussian exploration is added in the pre-saturation policy space. The policy is trained using a REINFORCE-style update, where the log-likelihood gradients from each episode are weighted by normalized episode returns.
 
-## Repository Contents
-
-```text
-rl-single-integrator-control/
-│
-├── train_single_integrator_rl.m     # Main training and testing script
-├── singleIntegratorNNPolicy.mat     # Saved trained policy, generated after training
-└── README.md                        # Project description
-```
 
 ## Main Features
 
@@ -53,17 +44,7 @@ rl-single-integrator-control/
 
 ## Running the Code
 
-Open MATLAB and run
-
-```matlab
-train_single_integrator_rl
-```
-
-The script trains the neural-network policy and saves the learned controller parameters in
-
-```matlab
-singleIntegratorNNPolicy.mat
-```
+Open MATLAB and run the m file. 
 
 After training, the script tests the learned policy on several randomly generated initial and goal positions.
 
